@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: var(--fontRegular);
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --blue: #00bff3;
+  --red: #ff715b;
+  --yellow: #f0c808;
+  --darkGray: #4c5b5cf8;
+  --bgColorFig: #4c5b5c9a;
+  --gradient: linear-gradient(
+    160deg,
+    rgba(255, 246, 207, 1) 0%,
+    rgba(254, 206, 122, 1) 100%
+  );
+
+  --fontRegular: "Roboto Slab", serif;
+}
+
+/* Heading */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--red);
+}
+
+/* Meet the robots */
+.row li {
+  list-style-type: none;
+  padding: 2%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.row figure {
+  background: var(--gradient);
+  border-radius: 50%;
+}
+
+.row figcaption {
+  text-align: center;
+  padding: 5%;
+  color: var(--red);
+}
+
+/* Menu mobile */
+#navbar {
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--darkGray);
+}
+
+.hamburger img {
+  width: 70%;
+}
+
+.close img {
+  width: 10%;
+  order: -1;
+  position: absolute;
+  bottom: 545px;
+  left: 348px;
+}
+
+.sr-only {
+  visibility: hidden;
+}
+
+header {
+  width: 100%;
+  float: right;
+  display: flex;
+  gap: 22%;
+  margin-bottom: 10%;
+}
+
+#navbar:target {
+  width: 100%;
+}
+#navbar:target + header {
+  width: 100%;
+}
+
+#navbar li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--red);
+}
+
+#navbar a {
+  font-size: 3rem;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Catalog mobile */
+.grid img {
+  z-index: -1;
+  position: relative;
+}
+
+.grid figcaption {
+  background-color: var(--bgColorFig);
+  height: 3.5rem;
+  width: 100%;
+  padding: 1%;
+  margin-top: -13.4rem;
+  float: right;
+  text-align: center;
+  z-index: 1;
+  font-size: 2rem;
+}
