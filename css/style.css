@@ -164,26 +164,27 @@ a {
 @media (min-width: 1024px) {
   #navbar {
     width: auto;
-    overflow: auto;
+    overflow: inherit;
     top: 0;
     display: flex;
     flex-direction: row;
     position: inherit;
     left: 0;
     background-color: var(--blue);
+    border-radius: 10px;
   }
 
   .hamburger img {
-    width: 70%;
+    width: 0%;
     display: none;
   }
 
   .close img {
-    width: 10%;
+    width: 0%;
     order: -1;
-    position: absolute;
-    bottom: 545px;
-    left: 348px;
+    position: inherit;
+    bottom: 0px;
+    left: 0px;
     display: none;
   }
 
@@ -197,6 +198,7 @@ a {
     display: flex;
     gap: 0%;
     margin-bottom: 10%;
+    align-items: center;
   }
 
   #navbar:target {
@@ -210,19 +212,24 @@ a {
   a {
     list-style-type: none;
     text-decoration: none;
-    color: var(--red);
+    color: var(--yellow);
   }
 
   #navbar a {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   #navbar {
     display: flex;
+    height: 50px;
   }
 
   #navbar ul {
     display: flex;
     gap: 10%;
+  }
+
+  .logo {
+    width: 20%;
   }
 }
